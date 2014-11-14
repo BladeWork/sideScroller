@@ -29,8 +29,6 @@ var states;
 
     function menuState() {
         ocean.update();
-
-        //plane.update();
         plane.destroy();
     }
     states.menuState = menuState;
@@ -53,12 +51,12 @@ var states;
         game.addChild(gameNameLabel);
 
         // Display Play Again Button
-        playButton = new objects.Button(stage.canvas.width / 2, 300, "playButton");
+        playButton = new objects.Button(stage.canvas.width / 2, 200, "playButton");
         game.addChild(playButton);
         playButton.addEventListener("click", playButtonClicked);
 
         // Display Play Again Button
-        instructionsButton = new objects.Button(stage.canvas.width / 2, 300, "instructionsButton");
+        instructionsButton = new objects.Button(stage.canvas.width / 2, 350, "instructionsButton");
         game.addChild(instructionsButton);
         playButton.addEventListener("click", instructionsButtonClicked);
 

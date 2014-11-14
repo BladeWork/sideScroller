@@ -26,6 +26,7 @@ var collision;
 
 var tryAgain;
 var playButton;
+var playButton2;
 var instructionsButton;
 
 var currentState;
@@ -72,8 +73,8 @@ function changeState(state) {
 
         case constants.INSTRUCTIONS_STATE:
             // instructions screen
-            currentStateFunction = states.menuState;
-            states.menu();
+            currentStateFunction = states.instractionsState;
+            states.instractions();
             break;
 
         case constants.PLAY_STATE:

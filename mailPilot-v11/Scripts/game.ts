@@ -28,6 +28,7 @@ var collision: managers.Collision;
 
 var tryAgain: objects.Button;
 var playButton: objects.Button;
+var playButton2: objects.Button;
 var instructionsButton: objects.Button;
 
 var currentState: number;
@@ -75,8 +76,8 @@ function changeState(state: number): void {
 
         case constants.INSTRUCTIONS_STATE:
             // instructions screen
-            currentStateFunction = states.menuState;
-            states.menu();
+            currentStateFunction = states.instractionsState;
+            states.instractions();
             break;
 
         case constants.PLAY_STATE:
