@@ -33,7 +33,6 @@
     export class Assets {
         public static manifest;
         public static data;
-
         public static loader;
         public static atlas: createjs.SpriteSheet;
 

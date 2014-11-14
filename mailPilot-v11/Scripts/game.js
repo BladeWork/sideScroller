@@ -26,6 +26,7 @@ var collision;
 
 var tryAgain;
 var playButton;
+var instructionsButton;
 
 var currentState;
 var currentStateFunction;
@@ -65,6 +66,12 @@ function changeState(state) {
     switch (state) {
         case constants.MENU_STATE:
             // instantiate menu screen
+            currentStateFunction = states.menuState;
+            states.menu();
+            break;
+
+        case constants.INSTRUCTIONS_STATE:
+            // instructions screen
             currentStateFunction = states.menuState;
             states.menu();
             break;

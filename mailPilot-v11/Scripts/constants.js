@@ -4,9 +4,10 @@
     constants.MENU_STATE = 0;
     constants.PLAY_STATE = 1;
     constants.GAME_OVER_STATE = 2;
+    constants.INSTRUCTIONS_STATE = 3;
 
     // Game Constants
-    constants.CLOUD_NUM = 3;
+    constants.CLOUD_NUM = 1;
     constants.LABEL_FONT = "40px Consolas";
     constants.LABEL_COLOUR = "#FFFF00";
     constants.PLANE_LIVES = 3;

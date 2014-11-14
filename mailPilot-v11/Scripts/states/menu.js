@@ -17,10 +17,21 @@ var states;
         changeState(currentState);
     }
     states.playButtonClicked = playButtonClicked;
+    function instructionsButtonClicked(event) {
+        stage.removeChild(game);
+        plane.destroy();
+        game.removeAllChildren();
+        game.removeAllEventListeners();
+        currentState = constants.INSTRUCTIONS_STATE;
+        changeState(currentState);
+    }
+    states.instructionsButtonClicked = instructionsButtonClicked;
 
     function menuState() {
         ocean.update();
-        plane.update();
+
+        //plane.update();
+        plane.destroy();
     }
     states.menuState = menuState;
 
@@ -38,13 +49,18 @@ var states;
         stage.cursor = "default";
 
         // Display Game Over
-        gameNameLabel = new objects.Label(stage.canvas.width / 2, 40, "MAIL PILOT");
+        gameNameLabel = new objects.Label(stage.canvas.width / 2, 40, "SIDE SCROLLER");
         game.addChild(gameNameLabel);
 
         // Display Play Again Button
         playButton = new objects.Button(stage.canvas.width / 2, 300, "playButton");
         game.addChild(playButton);
         playButton.addEventListener("click", playButtonClicked);
+
+        // Display Play Again Button
+        instructionsButton = new objects.Button(stage.canvas.width / 2, 300, "instructionsButton");
+        game.addChild(instructionsButton);
+        playButton.addEventListener("click", instructionsButtonClicked);
 
         stage.addChild(game);
     }
