@@ -36,9 +36,15 @@ module states {
         game.addChild(gameIntractionNameLabel);
 
         // Display INSTRUCTIONS
-        gameInstractionLabel = new objects.Label(stage.canvas.width / 2, 140, "This is side scroller game.\r\nTry to operation your car to avoid the black smoke.\r\nTry to get more coins.\r\nYou have three lifes");
+        gameInstractionLabel = new objects.Label(stage.canvas.width / 2, 130, "This is side scroller game.");
         game.addChild(gameInstractionLabel);
-
+        gameInstractionLabel = new objects.Label(stage.canvas.width / 2, 190, "Move mouse operate your");
+        game.addChild(gameInstractionLabel);
+        gameInstractionLabel = new objects.Label(stage.canvas.width / 2, 250, "avatar. Avoid pitfalls.");
+        game.addChild(gameInstractionLabel);
+        gameInstractionLabel = new objects.Label(stage.canvas.width / 2, 310, "And try to get more coins.");
+        game.addChild(gameInstractionLabel);
+        
         // Display Play Again Button
         playButton2 = new objects.Button(stage.canvas.width / 2, 450, "playButton");
         game.addChild(playButton2);
@@ -46,4 +52,4 @@ module states {
 
         stage.addChild(game);
     }
-} 
+}

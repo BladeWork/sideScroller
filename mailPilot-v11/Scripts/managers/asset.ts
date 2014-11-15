@@ -10,7 +10,7 @@
 
     // SpriteSheet Data Object
     var spriteSheetData = {
-        "images": ["assets/images/atlas.png"],
+        "images": ["assets/images/icons.png"],
         "frames": [
             [2, 2, 226, 178],
             [230, 2, 211, 69],

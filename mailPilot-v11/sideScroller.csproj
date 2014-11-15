@@ -59,13 +59,9 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="assets\images\1945.bmp" />
-    <Content Include="assets\images\atlas.png" />
-    <Content Include="assets\images\cloud.png" />
+    <Content Include="assets\images\icons.png" />
     <Content Include="assets\images\island.png" />
     <Content Include="assets\images\ocean.gif" />
-    <Content Include="assets\images\plane.png" />
-    <Content Include="assets\images\sideplane.gif" />
     <Content Include="assets\sounds\yay.ogg" />
     <Content Include="assets\sounds\thunder.ogg" />
     <Content Include="assets\sounds\engine.ogg" />
