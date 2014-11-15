@@ -9,7 +9,7 @@
 module states {
     export function playButtonClicked(event: MouseEvent) {
         stage.removeChild(game);
-        plane.destroy();
+        //plane.destroy();
         game.removeAllChildren();
         game.removeAllEventListeners();
         currentState = constants.PLAY_STATE;
@@ -17,7 +17,6 @@ module states {
     }
     export function instructionsButtonClicked(event: MouseEvent) {
         stage.removeChild(game);
-        plane.destroy();
         game.removeAllChildren();
         game.removeAllEventListeners();
         currentState = constants.INSTRUCTIONS_STATE;
@@ -26,7 +25,6 @@ module states {
 
     export function menuState() {
         ocean.update();
-        plane.destroy();
     }
 
     export function menu() {
@@ -37,7 +35,6 @@ module states {
 
         // Instantiate Game Objects
         ocean = new objects.Ocean(stage, game);
-        plane = new objects.Plane(stage, game);
 
         // Show Cursor
         stage.cursor = "default";
@@ -54,7 +51,7 @@ module states {
         // Display Play Again Button
         instructionsButton = new objects.Button(stage.canvas.width / 2, 350, "instructionsButton");
         game.addChild(instructionsButton);
-        playButton.addEventListener("click", instructionsButtonClicked);
+        instructionsButton.addEventListener("click", instructionsButtonClicked);
 
         stage.addChild(game);
     }

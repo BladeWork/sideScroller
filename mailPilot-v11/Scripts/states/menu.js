@@ -10,7 +10,8 @@ var states;
 (function (states) {
     function playButtonClicked(event) {
         stage.removeChild(game);
-        plane.destroy();
+
+        //plane.destroy();
         game.removeAllChildren();
         game.removeAllEventListeners();
         currentState = constants.PLAY_STATE;
@@ -19,7 +20,6 @@ var states;
     states.playButtonClicked = playButtonClicked;
     function instructionsButtonClicked(event) {
         stage.removeChild(game);
-        plane.destroy();
         game.removeAllChildren();
         game.removeAllEventListeners();
         currentState = constants.INSTRUCTIONS_STATE;
@@ -29,7 +29,6 @@ var states;
 
     function menuState() {
         ocean.update();
-        plane.destroy();
     }
     states.menuState = menuState;
 
@@ -41,7 +40,6 @@ var states;
 
         // Instantiate Game Objects
         ocean = new objects.Ocean(stage, game);
-        plane = new objects.Plane(stage, game);
 
         // Show Cursor
         stage.cursor = "default";
@@ -58,7 +56,7 @@ var states;
         // Display Play Again Button
         instructionsButton = new objects.Button(stage.canvas.width / 2, 350, "instructionsButton");
         game.addChild(instructionsButton);
-        playButton.addEventListener("click", instructionsButtonClicked);
+        instructionsButton.addEventListener("click", instructionsButtonClicked);
 
         stage.addChild(game);
     }

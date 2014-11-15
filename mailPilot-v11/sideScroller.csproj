@@ -99,7 +99,7 @@
     <Content Include="Scripts\lib\require.js" />
     <Content Include="Scripts\lib\soundjs-0.5.2.min.js" />
     <Content Include="Scripts\lib\tweenjs-0.5.1.min.js" />
-    <TypeScriptCompile Include="Scripts\states\instractions.ts" />
+    <TypeScriptCompile Include="Scripts\states\instructions.ts" />
     <Content Include="Web.config" />
     <Content Include="Scripts\lib\jquery-2.1.1.min.map" />
   </ItemGroup>

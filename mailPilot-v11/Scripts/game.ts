@@ -10,6 +10,7 @@
 /// <reference path="managers/collision.ts" />
 /// <reference path="states/play.ts" />
 /// <reference path="states/menu.ts" />
+/// <reference path="states/instructions.ts" />
 /// <reference path="states/gameover.ts" />
 
 // Side Scroller - Added basic state machine structure - Added Button and Label classe
@@ -76,8 +77,8 @@ function changeState(state: number): void {
 
         case constants.INSTRUCTIONS_STATE:
             // instructions screen
-            currentStateFunction = states.instractionsState;
-            states.instractions();
+            currentStateFunction = states.instructionsState;
+            states.instructions();
             break;
 
         case constants.PLAY_STATE:

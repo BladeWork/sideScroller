@@ -15,11 +15,11 @@ module states {
         currentState = constants.PLAY_STATE;
         changeState(currentState);
     }
-    export function instractionsState() {
+    export function instructionsState() {
         ocean.update();
     }
 
-    export function instractions() {
+    export function instructions() {
         var gameNameLabel: objects.Label;
         var gameInstractionLabel: objects.Label;
 
@@ -33,10 +33,10 @@ module states {
         stage.cursor = "default";
 
         // Display
-        gameNameLabel = new objects.Label(stage.canvas.width / 2, 40, "SIDE SCROLLER INSTRACTIONS");
+        gameNameLabel = new objects.Label(stage.canvas.width / 2, 40, "SIDE SCROLLER INSTRUCTIONS");
         game.addChild(gameNameLabel);
 
-        // Display INSTRACTIONS
+        // Display INSTRUCTIONS
         gameInstractionLabel = new objects.Label(stage.canvas.width / 2, 80, "This is side scroller game.");
         game.addChild(gameInstractionLabel);
 
