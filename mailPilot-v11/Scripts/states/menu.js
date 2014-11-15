@@ -10,8 +10,6 @@ var states;
 (function (states) {
     function playButtonClicked(event) {
         stage.removeChild(game);
-
-        //plane.destroy();
         game.removeAllChildren();
         game.removeAllEventListeners();
         currentState = constants.PLAY_STATE;

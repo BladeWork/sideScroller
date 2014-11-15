@@ -9,7 +9,6 @@
 module states {
     export function playButtonClicked2(event: MouseEvent) {
         stage.removeChild(game);
-        plane.destroy();
         game.removeAllChildren();
         game.removeAllEventListeners();
         currentState = constants.PLAY_STATE;
@@ -20,7 +19,7 @@ module states {
     }
 
     export function instructions() {
-        var gameNameLabel: objects.Label;
+        var gameIntractionNameLabel: objects.Label;
         var gameInstractionLabel: objects.Label;
 
         // Declare new Game Container
@@ -33,11 +32,11 @@ module states {
         stage.cursor = "default";
 
         // Display
-        gameNameLabel = new objects.Label(stage.canvas.width / 2, 40, "SIDE SCROLLER INSTRUCTIONS");
-        game.addChild(gameNameLabel);
+        gameIntractionNameLabel = new objects.Label(stage.canvas.width / 2, 40, "SIDE SCROLLER INSTRUCTIONS");
+        game.addChild(gameIntractionNameLabel);
 
         // Display INSTRUCTIONS
-        gameInstractionLabel = new objects.Label(stage.canvas.width / 2, 80, "This is side scroller game.");
+        gameInstractionLabel = new objects.Label(stage.canvas.width / 2, 140, "This is side scroller game.\r\nTry to operation your car to avoid the black smoke.\r\nTry to get more coins.\r\nYou have three lifes");
         game.addChild(gameInstractionLabel);
 
         // Display Play Again Button

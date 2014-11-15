@@ -9,7 +9,6 @@
 module states {
     export function playButtonClicked(event: MouseEvent) {
         stage.removeChild(game);
-        //plane.destroy();
         game.removeAllChildren();
         game.removeAllEventListeners();
         currentState = constants.PLAY_STATE;
