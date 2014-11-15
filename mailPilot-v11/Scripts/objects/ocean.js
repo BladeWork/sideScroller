@@ -7,23 +7,23 @@ var objects;
             this.stage = stage;
             this.game = game;
             this.image = new createjs.Bitmap(managers.Assets.loader.getResult("ocean"));
-            this.width = this.image.getBounds().width;
-            this.height = this.image.getBounds().height;
+            this.width = this.image.getBounds().height;
+            this.height = this.image.getBounds().width;
             this.reset();
 
-            this.dy = 5;
+            this.dx = -5;
 
             game.addChild(this.image);
         }
         Ocean.prototype.update = function () {
-            this.image.y += this.dy;
-            if (this.image.y >= 0) {
+            this.image.x += this.dx;
+            if (this.image.x < -800) {
                 this.reset();
             }
         };
 
         Ocean.prototype.reset = function () {
-            this.image.y = -960;
+            this.image.x = 0;
         };
 
         Ocean.prototype.destroy = function () {

@@ -40,7 +40,7 @@ module states {
         game.addChild(gameInstractionLabel);
         gameInstractionLabel = new objects.Label(stage.canvas.width / 2, 190, "Move mouse operate your");
         game.addChild(gameInstractionLabel);
-        gameInstractionLabel = new objects.Label(stage.canvas.width / 2, 250, "avatar. Avoid pitfalls.");
+        gameInstractionLabel = new objects.Label(stage.canvas.width / 2, 250, "avatar. Avoid bullets.");
         game.addChild(gameInstractionLabel);
         gameInstractionLabel = new objects.Label(stage.canvas.width / 2, 310, "And try to get more coins.");
         game.addChild(gameInstractionLabel);
