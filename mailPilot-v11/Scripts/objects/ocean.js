@@ -7,8 +7,8 @@ var objects;
             this.stage = stage;
             this.game = game;
             this.image = new createjs.Bitmap(managers.Assets.loader.getResult("ocean"));
-            this.width = this.image.getBounds().height;
-            this.height = this.image.getBounds().width;
+            this.width = this.image.getBounds().width;
+            this.height = this.image.getBounds().height;
             this.reset();
 
             this.dx = -5;

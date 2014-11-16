@@ -1,9 +1,9 @@
 ﻿/// <reference path="../constants.ts" />
 /// <reference path="../objects/scoreboard.ts" />
-/// <reference path="../objects/plane.ts" />
-/// <reference path="../objects/ocean.ts" />
-/// <reference path="../objects/island.ts" />
-/// <reference path="../objects/cloud.ts" />
+/// <reference path="../objects/car.ts" />
+/// <reference path="../objects/road.ts" />
+/// <reference path="../objects/coin.ts" />
+/// <reference path="../objects/bullet.ts" />
 /// <reference path="../objects/button.ts" />
 /// <reference path="../objects/label.ts" />
 var states;
@@ -26,7 +26,7 @@ var states;
     states.instructionsButtonClicked = instructionsButtonClicked;
 
     function menuState() {
-        ocean.update();
+        road.update();
     }
     states.menuState = menuState;
 
@@ -37,7 +37,7 @@ var states;
         game = new createjs.Container();
 
         // Instantiate Game Objects
-        ocean = new objects.Ocean(stage, game);
+        road = new objects.Road(stage, game);
 
         // Show Cursor
         stage.cursor = "default";

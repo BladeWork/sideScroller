@@ -1,14 +1,14 @@
 ﻿/// <reference path="../constants.ts" />
 /// <reference path="../objects/button.ts" />
-/// <reference path="../objects/cloud.ts" />
-/// <reference path="../objects/island.ts" />
+/// <reference path="../objects/bullet.ts" />
+/// <reference path="../objects/coin.ts" />
 /// <reference path="../objects/label.ts" />
-/// <reference path="../objects/ocean.ts" />
-/// <reference path="../objects/plane.ts" />
+/// <reference path="../objects/road.ts" />
+/// <reference path="../objects/car.ts" />
 /// <reference path="../objects/scoreboard.ts" />
 module states {
     export function gameOverState() {
-        ocean.update();
+        road.update();
     }
 
     // Restart Game when Try Again Button is clicked
@@ -30,7 +30,7 @@ module states {
         game = new createjs.Container();
 
         // Instantiate Game Objects
-        ocean = new objects.Ocean(stage, game);
+        road = new objects.Road(stage, game);
 
         // Show Cursor
         stage.cursor = "default";
@@ -40,7 +40,7 @@ module states {
         game.addChild(gameOverLabel);
 
         // Display Final Score Label
-        finalScoreLabel = new objects.Label(stage.canvas.width / 2, 120, "FINAL SCORE");
+        finalScoreLabel = new objects.Label(stage.canvas.width / 2, 120, "PICKED COINS");
         game.addChild(finalScoreLabel);
 
         // Display Final Score

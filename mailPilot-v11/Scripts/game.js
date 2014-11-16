@@ -1,9 +1,25 @@
-﻿/// <reference path="constants.ts" />
+﻿/*
+Source file name: game.js
+Author's name:    RenFa Feng
+Last Modified by: RenFa Feng
+Date last Modified: Nov. 16th 2014
+Program description: This program is using for dominate the whole game.
+Revision History: Nov. 6th First version.
+Nov. 13th Begin new project.
+Nov. 14th Finish screens.
+Nov. 15th Finish all functions, Final version.
+Class & Functions:  preload();
+init();
+optimizeForMobile();
+gameLoop(event);
+changeState(state: number);
+*/
+/// <reference path="constants.ts" />
 /// <reference path="managers/asset.ts" />
-/// <reference path="objects/cloud.ts" />
-/// <reference path="objects/island.ts" />
-/// <reference path="objects/ocean.ts" />
-/// <reference path="objects/plane.ts" />
+/// <reference path="objects/bullet.ts" />
+/// <reference path="objects/coin.ts" />
+/// <reference path="objects/road.ts" />
+/// <reference path="objects/car.ts" />
 /// <reference path="objects/scoreboard.ts" />
 /// <reference path="objects/label.ts" />
 /// <reference path="objects/button.ts" />
@@ -17,10 +33,10 @@
 var stage;
 var game;
 
-var ocean;
-var plane;
-var island;
-var clouds = [];
+var road;
+var car;
+var coin;
+var bullets = [];
 var scoreboard;
 
 var collision;

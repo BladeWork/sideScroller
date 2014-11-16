@@ -3,10 +3,10 @@
     // Image and Sound Manifest;
     var assetManifest = [
         { id: "loading", src: "assets/images/loading.jpg" },
-        { id: "ocean", src: "assets/images/Road.png" },
-        { id: "engine", src: "assets/sounds/engine.ogg" },
-        { id: "thunder", src: "assets/sounds/thunder.ogg" },
-        { id: "yay", src: "assets/sounds/yay.ogg" }
+        { id: "road", src: "assets/images/Road.png" },
+        { id: "engine", src: "assets/sounds/engine.wav" },
+        { id: "thunder", src: "assets/sounds/thunder.wav" },
+        { id: "yay", src: "assets/sounds/yay.wav" }
     ];
 
     // SpriteSheet Data Object
@@ -21,10 +21,10 @@
             [230, 144, 211, 69]
         ],
         "animations": {
-            "cloud": [0],
+            "bullet": [0],
             "instructionsButton": [1],
-            "island": [2],
-            "plane": [3],
+            "coin": [2],
+            "car": [3],
             "playButton": [4],
             "tryAgainButton": [5]
         }

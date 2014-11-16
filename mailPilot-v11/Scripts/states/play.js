@@ -1,20 +1,20 @@
 ﻿/// <reference path="../objects/button.ts" />
-/// <reference path="../objects/cloud.ts" />
-/// <reference path="../objects/island.ts" />
+/// <reference path="../objects/bullet.ts" />
+/// <reference path="../objects/coin.ts" />
 /// <reference path="../objects/label.ts" />
-/// <reference path="../objects/ocean.ts" />
-/// <reference path="../objects/plane.ts" />
+/// <reference path="../objects/road.ts" />
+/// <reference path="../objects/car.ts" />
 /// <reference path="../objects/scoreboard.ts" />
 /// <reference path="../managers/collision.ts" />
 var states;
 (function (states) {
     function playState() {
-        ocean.update();
-        island.update();
-        plane.update();
+        road.update();
+        coin.update();
+        car.update();
 
-        for (var count = 0; count < constants.CLOUD_NUM; count++) {
-            clouds[count].update();
+        for (var count = 0; count < constants.BULLET_NUM; count++) {
+            bullets[count].update();
         }
 
         collision.update();
@@ -22,7 +22,7 @@ var states;
 
         if (scoreboard.lives <= 0) {
             stage.removeChild(game);
-            plane.destroy();
+            car.destroy();
             game.removeAllChildren();
             game.removeAllEventListeners();
             currentState = constants.GAME_OVER_STATE;
@@ -37,22 +37,22 @@ var states;
         game = new createjs.Container();
 
         // Instantiate Game Objects
-        ocean = new objects.Ocean(stage, game);
-        island = new objects.Island(stage, game);
-        plane = new objects.Plane(stage, game);
+        road = new objects.Road(stage, game);
+        coin = new objects.Coin(stage, game);
+        car = new objects.Car(stage, game);
 
         // Show Cursor
         stage.cursor = "none";
 
-        for (var count = 0; count < constants.CLOUD_NUM; count++) {
-            clouds[count] = new objects.Cloud(stage, game);
+        for (var count = 0; count < constants.BULLET_NUM; count++) {
+            bullets[count] = new objects.Bullet(stage, game);
         }
 
         // Display Scoreboard
         scoreboard = new objects.Scoreboard(stage, game);
 
         // Instantiate Collision Manager
-        collision = new managers.Collision(plane, island, clouds, scoreboard);
+        collision = new managers.Collision(car, coin, bullets, scoreboard);
 
         stage.addChild(game);
     }
