@@ -1,4 +1,18 @@
-﻿/// <reference path="../constants.ts" />
+﻿/*
+Source file name: instructions.js
+Author's name:    RenFa Feng
+Last Modified by: RenFa Feng
+Date last Modified: Nov. 16th 2014
+Program description: This program is using for instruction screen.
+Revision History: Nov. 6th First version.
+                  Nov. 13th Begin new project.
+                  Nov. 14th Finish screens.
+                  Nov. 15th Finish all functions, Final version.
+Class & Functions:  playButtonClicked2(event: MouseEvent);
+                    instructionsState();
+                    instructions();
+*/
+/// <reference path="../constants.ts" />
 /// <reference path="../objects/scoreboard.ts" />
 /// <reference path="../objects/car.ts" />
 /// <reference path="../objects/road.ts" />
@@ -7,6 +21,7 @@
 /// <reference path="../objects/button.ts" />
 /// <reference path="../objects/label.ts" />
 module states {
+    //Play button (in instructions screen) click event
     export function playButtonClicked2(event: MouseEvent) {
         stage.removeChild(game);
         game.removeAllChildren();

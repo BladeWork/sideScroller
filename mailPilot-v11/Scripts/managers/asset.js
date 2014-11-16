@@ -1,4 +1,16 @@
-﻿var managers;
+﻿/*
+Source file name: assets.js
+Author's name:    RenFa Feng
+Last Modified by: RenFa Feng
+Date last Modified: Nov. 16th 2014
+Program description: This program is using for arrange the assets.
+Revision History: Nov. 6th First version.
+Nov. 13th Begin new project.
+Nov. 14th Finish screens.
+Nov. 15th Finish all functions, Final version.
+Class & Functions:  Assets;
+*/
+var managers;
 (function (managers) {
     // Image and Sound Manifest;
     var assetManifest = [

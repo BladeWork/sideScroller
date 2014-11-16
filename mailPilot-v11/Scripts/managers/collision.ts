@@ -1,4 +1,22 @@
-﻿/// <reference path="../objects/bullet.ts" />
+﻿/*
+Source file name: game.js
+Author's name:    RenFa Feng
+Last Modified by: RenFa Feng
+Date last Modified: Nov. 16th 2014
+Program description: This program is using for collision model.
+Revision History: Nov. 6th First version.
+                  Nov. 13th Begin new project.
+                  Nov. 14th Finish screens.
+                  Nov. 15th Finish all functions, Final version.
+Class & Functions:  Collision;
+                    constructor(car: objects.Car, coin: objects.Coin, bullets, scoreboard: objects.Scoreboard);
+                    carAndBullet(bullet: objects.Bullet);
+                    carAndCoin();
+                    distance(p1: createjs.Point, p2: createjs.Point);
+                    update();
+                    
+*/
+/// <reference path="../objects/bullet.ts" />
 /// <reference path="../objects/coin.ts" />
 /// <reference path="../objects/car.ts" />
 /// <reference path="../objects/scoreboard.ts" />

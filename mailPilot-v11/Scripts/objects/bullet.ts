@@ -1,4 +1,19 @@
-﻿/// <reference path="../managers/asset.ts" />
+﻿/*
+Source file name: bullet.js
+Author's name:    RenFa Feng
+Last Modified by: RenFa Feng
+Date last Modified: Nov. 16th 2014
+Program description: This program is using for bullet object.
+Revision History: Nov. 6th First version.
+                  Nov. 13th Begin new project.
+                  Nov. 14th Finish screens.
+                  Nov. 15th Finish all functions, Final version.
+Class & Functions:  Bullet;
+                    update();
+                    reset();
+                    destroy();
+*/
+/// <reference path="../managers/asset.ts" />
 module objects {
     // Bullet class
     export class Bullet {

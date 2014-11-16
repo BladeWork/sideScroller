@@ -1,4 +1,17 @@
-﻿/// <reference path="../objects/button.ts" />
+﻿/*
+Source file name: play.js
+Author's name:    RenFa Feng
+Last Modified by: RenFa Feng
+Date last Modified: Nov. 16th 2014
+Program description: This program is using for play screen.
+Revision History: Nov. 6th First version.
+                  Nov. 13th Begin new project.
+                  Nov. 14th Finish screens.
+                  Nov. 15th Finish all functions, Final version.
+Class & Functions:  playState();
+                    play();
+*/
+/// <reference path="../objects/button.ts" />
 /// <reference path="../objects/bullet.ts" />
 /// <reference path="../objects/coin.ts" />
 /// <reference path="../objects/label.ts" />

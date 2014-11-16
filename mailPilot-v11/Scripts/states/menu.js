@@ -1,4 +1,19 @@
-﻿/// <reference path="../constants.ts" />
+﻿/*
+Source file name: game.js
+Author's name:    RenFa Feng
+Last Modified by: RenFa Feng
+Date last Modified: Nov. 16th 2014
+Program description: This program is using for menu screen.
+Revision History: Nov. 6th First version.
+Nov. 13th Begin new project.
+Nov. 14th Finish screens.
+Nov. 15th Finish all functions, Final version.
+Class & Functions:  playButtonClicked(event: MouseEvent);
+instructionsButtonClicked(event: MouseEvent);
+menuState();
+menu();
+*/
+/// <reference path="../constants.ts" />
 /// <reference path="../objects/scoreboard.ts" />
 /// <reference path="../objects/car.ts" />
 /// <reference path="../objects/road.ts" />
@@ -8,6 +23,7 @@
 /// <reference path="../objects/label.ts" />
 var states;
 (function (states) {
+    //Play button click event
     function playButtonClicked(event) {
         stage.removeChild(game);
         game.removeAllChildren();
@@ -16,6 +32,8 @@ var states;
         changeState(currentState);
     }
     states.playButtonClicked = playButtonClicked;
+
+    //Instructions button click event
     function instructionsButtonClicked(event) {
         stage.removeChild(game);
         game.removeAllChildren();

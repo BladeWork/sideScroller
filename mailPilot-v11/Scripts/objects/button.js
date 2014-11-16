@@ -4,6 +4,21 @@
     __.prototype = b.prototype;
     d.prototype = new __();
 };
+/*
+Source file name: button.js
+Author's name:    RenFa Feng
+Last Modified by: RenFa Feng
+Date last Modified: Nov. 16th 2014
+Program description: This program is using for instruction screen.
+Revision History: Nov. 6th First version.
+Nov. 13th Begin new project.
+Nov. 14th Finish screens.
+Nov. 15th Finish all functions, Final version.
+Class & Functions:  Button;
+setButtonListeners();
+onButtonOver();
+onButtonOut();
+*/
 /// <reference path="../constants.ts" />
 /// <reference path="../managers/asset.ts" />
 var objects;

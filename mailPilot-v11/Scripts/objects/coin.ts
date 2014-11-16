@@ -1,4 +1,19 @@
-﻿/// <reference path="../managers/asset.ts" />
+﻿/*
+Source file name: coin.js
+Author's name:    RenFa Feng
+Last Modified by: RenFa Feng
+Date last Modified: Nov. 16th 2014
+Program description: This program is using for coin object.
+Revision History: Nov. 6th First version.
+                  Nov. 13th Begin new project.
+                  Nov. 14th Finish screens.
+                  Nov. 15th Finish all functions, Final version.
+Class & Functions:  Scoreboard;
+                    update();
+                    reset();
+                    destroy();
+*/
+/// <reference path="../managers/asset.ts" />
 module objects {
     // Coin Class
     export class Coin {
